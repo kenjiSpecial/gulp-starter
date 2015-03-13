@@ -7,3 +7,4 @@ Inclueds the folloing tools.
 - Browserify
 - SASS
 - BrowserSync
+- Imagemin

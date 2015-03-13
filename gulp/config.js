@@ -20,5 +20,9 @@ module.exports = {
     scss : {
         src: src + "/scss/**/*.scss",
         dest: dest + "/css"
+    },
+    images: {
+        src: src + "/images/**",
+        dest: dest + "/images"
     }
 };
