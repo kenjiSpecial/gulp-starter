@@ -11,3 +11,9 @@ gulp.task('images', function() {
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({stream:true}));
 });
+
+gulp.task('images-product', function(){
+    return gulp.src(config.src)
+        .pipe(imagemin())
+        .pipe(gulp.dest(config.product))
+});

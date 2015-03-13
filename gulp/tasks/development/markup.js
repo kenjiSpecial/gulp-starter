@@ -7,3 +7,8 @@ gulp.task('markup', function() {
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({stream:true}));
 });
+
+gulp.task('markup-product', function(){
+    return gulp.src(config.src)
+        .pipe(gulp.dest(config.product))
+});

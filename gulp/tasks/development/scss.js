@@ -14,3 +14,8 @@ gulp.task('scss', function () {
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({stream:true}));
 });
+
+gulp.task("scssDeploy", function(){
+    return gulp.src(config.src)
+        .pipe(sass(config.deploySettings))
+});

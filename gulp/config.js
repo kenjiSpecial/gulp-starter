@@ -1,4 +1,5 @@
-var dest = "./build";
+var dest = "./dev";
+var product = "./product";
 var src = './src';
 
 module.exports = {
@@ -9,20 +10,34 @@ module.exports = {
         }
     },
     markup: {
-        src  : src + "/htdocs/**",
-        dest : dest
+        src: src + "/htdocs/**",
+        dest: dest,
+        product : product
     },
-    browserify : {
-        src  : src + "/js/main.js",
-        dest : dest + "/js",
-        watchSrc : src + "/js/{,*/}*.js"
+    browserify: {
+        src: src + "/js/main.js",
+        dest: dest + "/js",
+        watchSrc: src + "/js/{,*/}*.js"
     },
-    scss : {
+    scss: {
         src: src + "/scss/**/*.scss",
-        dest: dest + "/css"
+        dest: dest + "/css",
+        product : product,
+        settings: {
+        },
+        deploySettings : {
+
+        }
     },
     images: {
         src: src + "/images/**",
-        dest: dest + "/images"
+        dest: dest + "/images",
+        product : product + "/images"
+    },
+    production : {
+        cssSrc  : dest    + '/css/*.css',
+        jsSrc   : dest    + '/js/*.js',
+        cssDest : product + "/css",
+        jsDest  : product + "/js"
     }
 };
