@@ -12,7 +12,7 @@ Inclueds the folloing tools.
 ### Install npm dependencies
 
 ```
-npm install
+npm install && cd gulp-starter && rm -rf .git && git init && npm i
 ```
 
 ###"dev" folder is the folder when you develop.
