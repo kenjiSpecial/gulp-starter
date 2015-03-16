@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.2.3",
+    "connect-history-api-fallback": "0.0.5",
     "wiredep": "^2.2.2"
   },
   "browserify": {
