@@ -9,10 +9,10 @@ Inclueds the folloing tools.
 - BrowserSync
 - Imagemin
 
-### Install npm dependencies
+### Clone repo and Install npm dependencies
 
 ```
-npm install && cd gulp-starter && rm -rf .git && git init && npm i
+git clone https://github.com/kenjiSpecial/gulp-starter && cd gulp-starter && rm -rf .git && git init && npm i
 ```
 
 ###"dev" folder is the folder when you develop.
