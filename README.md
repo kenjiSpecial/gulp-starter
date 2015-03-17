@@ -2,12 +2,16 @@
 
 Inspiration from [greyplats/gulp-starter](https://github.com/greypants/gulp-starter)
 
-Inclueds the folloing tools.
+Boilerplate for developing interactive website.
 
-- Browserify
+
+## Tasks(gulp)
+
+- Browserify + Watchfy
 - SASS
 - BrowserSync
 - Imagemin
+
 
 ### Clone repo and Install npm dependencies
 

@@ -8,7 +8,7 @@ module.exports = {
         server: {
             // Serve up our build folder
             baseDir: dest,
-            index  : defaultFile,
+            index  : 'index.html',
             middleware: [ historyApiFallback ]
         }
     },
